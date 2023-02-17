@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .design {
+            margin: auto;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Student Registration Form</h1>
+    <form>
+        <table align="center">
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="Name"></td>
+            </tr>
+            <tr>
+                <td><label for="Number">Phone Number:</label></td>
+                <td><input type="number" id="Number" name="Phone"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of birth:</label></td>
+                <td><input type="date" id="dob" name="DOB"></td>
+            </tr>
+            <tr>
+                <td><label for="Address">Address:</label></td>
+                <td><textarea id="Address" rows="5" cols="12"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                <td><input type="radio" id="gender" name="gender" value="Male">Male
+                    <input type="radio" id="gender" name="gender" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td><label for="City">City:</label></td>
+                <td><select id="City" name="city">
+                        <option selected>Select City</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Shamli">Shamli</option>
+                        <option value="Meerut">Meerut</option>
+                        <option value="Gurugram">Gurugram</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies:</td>
+                <td> <input type="checkbox" id="Music" name="Music" value="Music">
+                    <label for="Music"> Music</label>
+                </td>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" id="Reading" name="Reading" value="Reading">
+                    <label for="Reading"> Reading</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" id="Sports" name="Sports" value="Sports">
+                    <label for="Sports">Sports</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" id="Dancing" name="Dancing" value="Dancing">
+                    <label for="Dancing">Dancing</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" id="Cooking" name="Cooking" value="Cooking">
+                    <label for="Cooking">Cooking</label>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+                <td><input type="reset"></td>
+            </tr>
+        </table>
+    </form>
+
+    <br><br>
+
+    <h2 style="text-align: center;">Student Record</h2>
+
+    <table class="design">
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Phone No</th>
+            <th>Gender</th>
+            <th>City</th>
+            <th>Hobbies</th>
+        </tr>
+
+        <tr>
+            <td rowspan="3">1</td>
+            <td rowspan="3">Sanyam</td>
+            <td rowspan="3">9999999999</td>
+            <td rowspan="3">Male</td>
+            <td rowspan="3">Shamli</td>
+            <td>Music</td>
+        </tr>
+        <tr>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <td>Coding</td>
+        </tr>
+        <tr>
+            <td rowspan="3">2</td>
+            <td rowspan="3">Vaibhav</td>
+            <td rowspan="3">9999999999</td>
+            <td rowspan="3">Male</td>
+            <td rowspan="3">Meerut</td>
+            <td>Dancing</td>
+        </tr>
+        <tr>
+            <td>Singing</td>
+        </tr>
+        <tr>
+            <td>Sports</td>
+        </tr>
+
+        <tr>
+            <td rowspan="3">3</td>
+            <td rowspan="3">Shivani</td>
+            <td rowspan="3">9999999999</td>
+            <td rowspan="3">Female</td>
+            <td rowspan="3">Noida</td>
+            <td>Dancing</td>
+        </tr>
+        <tr>
+            <td>Sports</td>
+        </tr>
+        <tr>
+            <td>Cooking</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
